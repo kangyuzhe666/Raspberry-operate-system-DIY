@@ -1,0 +1,964 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+                              ./object/Graphic.o (__aeabi_idiv)
+/usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o) (__aeabi_idiv0)
+/usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+                              ./object/input.o (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+GpuBufAddr          0x4               ./object/Graphic.o
+time_out_p          0x18              ./object/timer.o
+colorB              0x3               ./object/Graphic.o
+form1_handle        0x4               ./object/debug.o
+input_status        0x4               ./object/Graphic.o
+task_stack          0x4400            ./object/Graphic.o
+task_global         0x8               ./object/task.o
+rxhead              0x4               ./object/UART.o
+DesktopHandle       0x4               ./object/Graphic.o
+MousePic            0x1c              ./object/Graphic.o
+timer_time_out_p    0x5               ./object/timer.o
+mcursor             0x300             ./object/Graphic.o
+colorGreen          0x3               ./object/Graphic.o
+colorWrite          0x3               ./object/Graphic.o
+task_ready_ll       0x804             ./object/Graphic.o
+task_ready          0x4               ./object/Graphic.o
+input_p             0x18              ./object/UART.o
+colorRed            0x3               ./object/Graphic.o
+MSG_list            0x4               ./object/Graphic.o
+input_buf_p         0x40              ./object/UART.o
+PicLayerTable       0x4               ./object/Graphic.o
+GpuInfoAddr         0x4               ./object/Graphic.o
+transparent         0x3               ./object/Graphic.o
+FreeMemoryTables_p  0x8014            ./object/memory.o
+MSG_list_ll         0x804             ./object/Graphic.o
+MouseHaldle         0x4               ./object/Graphic.o
+colorBule           0x3               ./object/Graphic.o
+os_timer_ctrl       0xc04             ./object/timer.o
+colorBlack          0x3               ./object/Graphic.o
+task_table          0x4c8             ./object/Graphic.o
+rxtail              0x4               ./object/UART.o
+task_info           0x154             ./object/Graphic.o
+rxbuffer            0x1000            ./object/UART.o
+colorF              0x3               ./object/Graphic.o
+MSG                 0x200             ./object/Graphic.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                [!provide]                        PROVIDE (__executable_start, 0x8000)
+                0x0000000000008000                . = 0x8000
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+
+.rela.text
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+
+.rela.rodata
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+
+.rel.data.rel.ro
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+
+.rela.data.rel.ro
+ *(.rela.data.rel.ro .rela.data.rel.ro.* .rela.gnu.linkonce.d.rel.ro.*)
+
+.rel.data
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+
+.rela.data
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+
+.rel.tdata
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+
+.rela.tdata
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+
+.rel.tbss
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+
+.rela.tbss
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.bss
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.iplt       0x0000000000008000        0x0
+                [!provide]                        PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000008000        0x0 ./object/Graphic.o
+                [!provide]                        PROVIDE (__rel_iplt_end, .)
+
+.rela.iplt      0x0000000000008000        0x0
+                [!provide]                        PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                [!provide]                        PROVIDE (__rela_iplt_end, .)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT(.init))
+
+.plt
+ *(.plt)
+
+.iplt           0x0000000000008000        0x0
+ *(.iplt)
+ .iplt          0x0000000000008000        0x0 ./object/Graphic.o
+
+.text           0x0000000000008000    0xfceb0
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup  0x0000000000008000       0xcc /tmp/cclqMRGF.o
+                0x0000000000008000                _start
+                0x0000000000008088                _get_stack_pointer
+                0x0000000000008094                _enable_interrupts
+                0x00000000000080a4                _disable_interrupts
+                0x00000000000080b4                reboot
+                0x00000000000080b8                PUT32
+                0x00000000000080c0                GET32
+                0x00000000000080c8                dummy
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000000080cc     0x451c ./object/Graphic.o
+                0x00000000000080cc                init_screen_layer
+                0x0000000000008360                init_screen
+                0x0000000000008548                DrawDot
+                0x0000000000008624                DrawDot_to_layer
+                0x00000000000086fc                DrawLine
+                0x000000000000872c                DrawBlock
+                0x00000000000087c4                DrawBlock_to_layer
+                0x000000000000886c                DrawBlockByMemory
+                0x0000000000008888                drawCharacter
+                0x0000000000008b04                drawCharacter_to_layer
+                0x0000000000008de0                drawString
+                0x0000000000008e40                drawString_to_layer
+                0x0000000000008eb0                drawDec
+                0x0000000000008fac                drawDec_to_layer
+                0x00000000000090b8                drawFlt
+                0x00000000000090e0                drawHex
+                0x000000000000923c                drawHex_to_layer
+                0x00000000000093c4                drawBin
+                0x00000000000094a4                drawBin_to_layer
+                0x0000000000009590                drawStringF_to_layer
+                0x00000000000099a0                drawStringF
+                0x0000000000009d58                os_printf
+                0x000000000000a128                draw_to_screen
+                0x000000000000a268                draw_to_screen_rect
+                0x000000000000a410                PicLayerTable_init
+                0x000000000000a4c8                add_pic
+                0x000000000000a5e4                add_pic_to_layer
+                0x000000000000a6e4                rm_picture
+                0x000000000000a78c                rm_from_layer
+                0x000000000000a954                get_LayerIndex_by_PicIndex
+                0x000000000000a9a4                get_PicIndex_by_LayerIndex
+                0x000000000000a9e4                set_pic_to_top
+                0x000000000000abbc                set_picture_position
+                0x000000000000ace4                pic_layer_reflash_rect
+                0x000000000000aeb8                pic_layer_reflash
+                0x000000000000af90                is_inside
+                0x000000000000b074                inside_rect
+                0x000000000000bb40                move_pic_layer
+                0x000000000000c1c4                move_pic_layer_sub
+                0x000000000000c404                copy_bmp_to_piclayer
+ .text          0x000000000000c5e8     0x103c ./object/linkedlist.o
+                0x000000000000c5e8                ll_init
+                0x000000000000c664                ll_add_to_head
+                0x000000000000c744                ll_add_to_tail
+                0x000000000000c834                ll_add_by_order
+                0x000000000000c9c4                ll_add_after_id
+                0x000000000000cb14                ll_remove_by_id
+                0x000000000000cbf8                ll_remove_head
+                0x000000000000cc30                ll_remove_tail
+                0x000000000000cc78                ll_get_next_id
+                0x000000000000cd20                ll_get_next_value
+                0x000000000000cddc                ll_get_prior_id
+                0x000000000000ce84                ll_get_prior_value
+                0x000000000000cf40                ll_get_count
+                0x000000000000cf68                ll_get_head_id
+                0x000000000000cf90                ll_get_tail_id
+                0x000000000000cfb8                ll_get_max_id
+                0x000000000000cfe0                ll_get_min_id
+                0x000000000000d008                ll_get_value
+                0x000000000000d0b0                ll_get_free_id
+                0x000000000000d16c                ll_reflash_head_and_tail
+                0x000000000000d1a4                ll_link
+                0x000000000000d25c                ll_rm_link
+                0x000000000000d2e4                ll_get_max
+                0x000000000000d414                ll_get_min
+                0x000000000000d544                ll_set_value
+ .text          0x000000000000d624       0x38 ./object/interrupt.o
+                0x000000000000d624                undifined_instruction_vector
+                0x000000000000d630                software_interrupt_vector
+                0x000000000000d63c                prefetch_abort_vector
+                0x000000000000d648                data_abort_vector
+                0x000000000000d654                fast_interrupt_vector
+ .text          0x000000000000d65c     0x135c ./object/task.o
+                0x000000000000d65c                task_init
+                0x000000000000d738                task_idle
+                0x000000000000d744                task_create
+                0x000000000000d8d4                task_get_id
+                0x000000000000d9d4                task_run
+                0x000000000000dba0                task_schedule
+                0x000000000000dcac                task_delete
+                0x000000000000e06c                task_lock_schedule
+                0x000000000000e090                task_unlock_schedule
+                0x000000000000e0b4                task_wait
+                0x000000000000e0c8                task_wait_abort
+                0x000000000000e0dc                task_suspend
+                0x000000000000e0f0                task_resume
+                0x000000000000e104                task_send_msg
+                0x000000000000e214                MSG_dispose
+                0x000000000000e3d8                task_recevie_msg
+                0x000000000000e49c                task_recevie_msg_abort
+                0x000000000000e4b0                task_semaphore_cteate
+                0x000000000000e4c4                task_semaphore_wait
+                0x000000000000e4d8                task_semaphore_wait_abort
+                0x000000000000e4ec                task_semaphore_post
+                0x000000000000e500                task_semaphore_delete
+                0x000000000000e514                task_manager
+ .text          0x000000000000e9b8      0x4d8 ./object/gpio.o
+                0x000000000000e9b8                gpio_init
+                0x000000000000e9dc                GPIO_SET_GPFSEL
+                0x000000000000ea94                bcm2835_peri_set_bits
+                0x000000000000eaf0                bcm2835_peri_write
+                0x000000000000eb28                bcm2835_peri_read
+                0x000000000000eb64                GPIO_SET_GPSET
+                0x000000000000ec10                GPIO_SET_GPCLR
+                0x000000000000ecbc                GET_GPFSEL_ADDR
+                0x000000000000ed78                GET_GPSET_ADDR
+                0x000000000000edb8                GET_GPCLR_ADDR
+                0x000000000000edf8                blink_GPIO16
+                0x000000000000ee44                blink_GPIO19
+ .text          0x000000000000ee90      0xd04 ./object/memory.o
+                0x000000000000ee90                momory_init
+                0x000000000000ef28                total_free_memory_size
+                0x000000000000efac                os_malloc
+                0x000000000000f198                os_free
+                0x000000000000fb18                os_memcpy
+ .text          0x000000000000fb94      0x404 ./object/main.o
+                0x000000000000fb94                os_main
+                0x000000000000ff84                exit
+ .text          0x000000000000ff98      0x9ec ./object/debug.o
+                0x000000000000ff98                deb_GPIO
+                0x000000000000ffbc                deb_screen
+                0x0000000000010100                deb_os_printf
+                0x0000000000010144                deb_timer
+                0x0000000000010188                deb_timer_refalsh
+                0x000000000001034c                deb_linedlist
+                0x000000000001043c                deb_linedlist_reflash
+                0x000000000001059c                deb_task
+                0x0000000000010614                task1
+                0x00000000000106a4                task2
+                0x0000000000010750                dbg_UART
+                0x0000000000010760                dbg_memory
+                0x000000000001082c                dbg_input
+                0x00000000000108cc                dbg_bmp
+                0x0000000000010974                dbg_form
+ .text          0x0000000000010984      0x398 ./object/UART.o
+                0x0000000000010984                uart_init
+                0x0000000000010b3c                uart_putc
+                0x0000000000010b88                UART_irq_handler
+ .text          0x0000000000010d1c      0x218 ./object/GPU.o
+                0x0000000000010d1c                init_GPU
+                0x0000000000010de4                GPU_SendMail
+                0x0000000000010e80                GPU_RecMail
+ .text          0x0000000000010f34      0x210 ./object/fifo.o
+                0x0000000000010f34                fifo_init
+                0x0000000000010fb0                fifo_put
+                0x0000000000011074                fifo_get
+ .text          0x0000000000011144      0x3bc ./object/input.o
+                0x0000000000011144                input_fifo_dispose
+                0x000000000001123c                input_keyboard
+                0x0000000000011250                init_mouse_cursor
+                0x0000000000011444                input_mouse_init
+ .text          0x0000000000011500     0x1050 ./object/form.o
+                0x0000000000011500                form1
+                0x0000000000012208                form1_dispose
+                0x00000000000124fc                textbox
+                0x0000000000012518                button
+                0x0000000000012534                ctrlbox
+ .text          0x0000000000012550      0x820 ./object/timer.o
+                0x0000000000012550                sleep
+                0x00000000000125e0                init_arm_timer
+                0x000000000001265c                init_os_timer_ctrl
+                0x000000000001272c                set_os_timer
+                0x0000000000012808                get_os_timer_id
+                0x000000000001288c                os_timer_insert_pointer
+                0x0000000000012978                free_os_timer
+                0x00000000000129f4                os_timer_remove_pointer
+                0x0000000000012a70                os_timer_ctrl_reflash
+                0x0000000000012d38                time_out_msg
+ .text          0x0000000000012d70       0x6c ./object/startup.o
+                0x0000000000012d70                _cstartup
+ *fill*         0x0000000000012ddc        0x4 
+ .text          0x0000000000012de0    0xf1d74 /tmp/ccdglB7y.o
+                0x0000000000012de0                font
+                0x00000000000135e0                bmp
+                0x0000000000013916                bg_bmp
+                0x00000000000fd5ee                color_bmp
+ .text          0x0000000000104b54      0x120 /tmp/cch1UAiB.o
+                0x0000000000104b54                _interrupt_vector_
+ .text          0x0000000000104c74        0x0 /tmp/ccyTCouD.o
+ .text          0x0000000000104c74        0x0 /tmp/cclqMRGF.o
+ .text          0x0000000000104c74      0x148 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+                0x0000000000104c74                __aeabi_idiv
+                0x0000000000104c74                __divsi3
+                0x0000000000104d9c                __aeabi_idivmod
+ .text          0x0000000000104dbc        0x4 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+                0x0000000000104dbc                __aeabi_ldiv0
+                0x0000000000104dbc                __aeabi_idiv0
+ .text          0x0000000000104dc0        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000000000104dc0       0xf0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+                0x0000000000104dc0                memcpy
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x0000000000104eb0        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000000104eb0        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x0000000000104eb0        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x0000000000104eb0        0x0 linker stubs
+
+.fini
+ *(SORT(.fini))
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+
+.rodata         0x0000000000104eb0      0x3f6
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000104eb0       0x7d ./object/task.o
+ *fill*         0x0000000000104f2d        0x3 
+ .rodata        0x0000000000104f30       0x29 ./object/main.o
+ *fill*         0x0000000000104f59        0x3 
+ .rodata        0x0000000000104f5c      0x11a ./object/debug.o
+ *fill*         0x0000000000105076        0x2 
+ .rodata        0x0000000000105078        0x6 ./object/fifo.o
+ *fill*         0x000000000010507e        0x2 
+ .rodata        0x0000000000105080      0x11c ./object/input.o
+ .rodata        0x000000000010519c      0x10a ./object/form.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                        PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                        PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x00000000001052a6        0x0
+                [!provide]                        PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, .)
+
+.init_array     0x00000000001052a6        0x0
+                [!provide]                        PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end, .)
+
+.fini_array     0x00000000001052a6        0x0
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got            0x00000000001052a8        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x00000000001052a8        0x0 ./object/Graphic.o
+ *(.got)
+ *(.igot)
+
+.data           0x0000000000106000     0x1028
+                0x0000000000106000                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000106000        0x0 ./object/Graphic.o
+ .data          0x0000000000106000        0x0 ./object/linkedlist.o
+ .data          0x0000000000106000        0x0 ./object/interrupt.o
+ .data          0x0000000000106000        0x0 ./object/task.o
+ .data          0x0000000000106000        0x0 ./object/gpio.o
+ .data          0x0000000000106000        0x4 ./object/memory.o
+                0x0000000000106000                FreeMemoryTables
+ .data          0x0000000000106004        0x0 ./object/main.o
+ .data          0x0000000000106004        0x0 ./object/debug.o
+ .data          0x0000000000106004        0x8 ./object/UART.o
+                0x0000000000106004                input_buf
+                0x0000000000106008                input
+ .data          0x000000000010600c        0x0 ./object/GPU.o
+ .data          0x000000000010600c        0x0 ./object/fifo.o
+ .data          0x000000000010600c        0x0 ./object/input.o
+ .data          0x000000000010600c        0x1 ./object/form.o
+ *fill*         0x000000000010600d        0x3 
+ .data          0x0000000000106010        0xc ./object/timer.o
+                0x0000000000106010                ArmTimer
+                0x0000000000106014                timer_time_out
+                0x0000000000106018                time_out
+ .data          0x000000000010601c        0x0 ./object/startup.o
+ .data          0x000000000010601c        0x0 /tmp/ccdglB7y.o
+ .data          0x000000000010601c        0x0 /tmp/cch1UAiB.o
+ *fill*         0x000000000010601c      0xfe4 
+ .data          0x0000000000107000       0x28 /tmp/ccyTCouD.o
+                0x0000000000107000                FrameBufferInfo
+ .data          0x0000000000107028        0x0 /tmp/cclqMRGF.o
+ .data          0x0000000000107028        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+ .data          0x0000000000107028        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000107028        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+
+.data1
+ *(.data1)
+                0x0000000000107028                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x0000000000107028                . = .
+                0x0000000000107028                __bss_start = .
+                0x0000000000107028                __bss_start__ = .
+
+.bss            0x0000000000107028     0xfc4c
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000107028        0x8 ./object/Graphic.o
+                0x0000000000107028                os_top
+                0x000000000010702c                os_left
+ .bss           0x0000000000107030        0x0 ./object/linkedlist.o
+ .bss           0x0000000000107030        0x0 ./object/interrupt.o
+ .bss           0x0000000000107030        0x0 ./object/task.o
+ .bss           0x0000000000107030        0x8 ./object/gpio.o
+ .bss           0x0000000000107038        0x0 ./object/memory.o
+ .bss           0x0000000000107038        0x8 ./object/main.o
+                0x0000000000107038                tmp
+ .bss           0x0000000000107040        0x4 ./object/debug.o
+ .bss           0x0000000000107044        0x4 ./object/UART.o
+ .bss           0x0000000000107048        0x0 ./object/GPU.o
+ .bss           0x0000000000107048        0x0 ./object/fifo.o
+ .bss           0x0000000000107048        0x0 ./object/input.o
+ .bss           0x0000000000107048        0x8 ./object/form.o
+ .bss           0x0000000000107050        0x0 ./object/timer.o
+ .bss           0x0000000000107050        0x0 ./object/startup.o
+ .bss           0x0000000000107050        0x0 /tmp/ccdglB7y.o
+ .bss           0x0000000000107050        0x0 /tmp/cch1UAiB.o
+ .bss           0x0000000000107050        0x0 /tmp/ccyTCouD.o
+ .bss           0x0000000000107050        0x0 /tmp/cclqMRGF.o
+ .bss           0x0000000000107050        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+ .bss           0x0000000000107050        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000107050        0x0 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+ *(COMMON)
+ COMMON         0x0000000000107050     0x5f80 ./object/Graphic.o
+                0x0000000000107050                GpuBufAddr
+                0x0000000000107054                colorB
+                0x0000000000107058                input_status
+                0x000000000010705c                task_stack
+                0x000000000010b45c                DesktopHandle
+                0x000000000010b460                MousePic
+                0x000000000010b47c                mcursor
+                0x000000000010b77c                colorGreen
+                0x000000000010b780                colorWrite
+                0x000000000010b784                task_ready_ll
+                0x000000000010bf88                task_ready
+                0x000000000010bf8c                colorRed
+                0x000000000010bf90                MSG_list
+                0x000000000010bf94                PicLayerTable
+                0x000000000010bf98                GpuInfoAddr
+                0x000000000010bf9c                transparent
+                0x000000000010bfa0                MSG_list_ll
+                0x000000000010c7a4                MouseHaldle
+                0x000000000010c7a8                colorBule
+                0x000000000010c7ac                colorBlack
+                0x000000000010c7b0                task_table
+                0x000000000010cc78                task_info
+                0x000000000010cdcc                colorF
+                0x000000000010cdd0                MSG
+ COMMON         0x000000000010cfd0        0x8 ./object/task.o
+                0x000000000010cfd0                task_global
+ COMMON         0x000000000010cfd8     0x8014 ./object/memory.o
+                0x000000000010cfd8                FreeMemoryTables_p
+ COMMON         0x0000000000114fec        0x4 ./object/debug.o
+                0x0000000000114fec                form1_handle
+ COMMON         0x0000000000114ff0     0x1060 ./object/UART.o
+                0x0000000000114ff0                rxhead
+                0x0000000000114ff4                input_p
+                0x000000000011500c                input_buf_p
+                0x000000000011504c                rxtail
+                0x0000000000115050                rxbuffer
+ COMMON         0x0000000000116050      0xc24 ./object/timer.o
+                0x0000000000116050                time_out_p
+                0x0000000000116068                timer_time_out_p
+                0x0000000000116070                os_timer_ctrl
+                0x0000000000116c74                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000000116c74                _bss_end__ = .
+                0x0000000000116c74                __bss_end__ = .
+                0x0000000000116c74                . = ALIGN (0x4)
+                0x0000000000116c74                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000000116c74                . = ALIGN (0x4)
+                0x0000000000116c74                __end__ = .
+                0x0000000000116c74                _end = .
+                [!provide]                        PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x70
+ *(.comment)
+ .comment       0x0000000000000000       0x38 ./object/Graphic.o
+                                         0x39 (size before relaxing)
+ .comment       0x0000000000000038       0x39 ./object/linkedlist.o
+ .comment       0x0000000000000038       0x39 ./object/interrupt.o
+ .comment       0x0000000000000038       0x39 ./object/task.o
+ .comment       0x0000000000000038       0x39 ./object/gpio.o
+ .comment       0x0000000000000038       0x39 ./object/memory.o
+ .comment       0x0000000000000038       0x39 ./object/main.o
+ .comment       0x0000000000000038       0x39 ./object/debug.o
+ .comment       0x0000000000000038       0x39 ./object/UART.o
+ .comment       0x0000000000000038       0x39 ./object/GPU.o
+ .comment       0x0000000000000038       0x39 ./object/fifo.o
+ .comment       0x0000000000000038       0x39 ./object/input.o
+ .comment       0x0000000000000038       0x39 ./object/form.o
+ .comment       0x0000000000000038       0x39 ./object/timer.o
+ .comment       0x0000000000000038       0x39 ./object/startup.o
+ .comment       0x0000000000000038       0x38 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+                                         0x39 (size before relaxing)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x280
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 ./object/Graphic.o
+ .debug_aranges
+                0x0000000000000020       0x20 ./object/linkedlist.o
+ .debug_aranges
+                0x0000000000000040       0x20 ./object/interrupt.o
+ .debug_aranges
+                0x0000000000000060       0x20 ./object/task.o
+ .debug_aranges
+                0x0000000000000080       0x20 ./object/gpio.o
+ .debug_aranges
+                0x00000000000000a0       0x20 ./object/memory.o
+ .debug_aranges
+                0x00000000000000c0       0x20 ./object/main.o
+ .debug_aranges
+                0x00000000000000e0       0x20 ./object/debug.o
+ .debug_aranges
+                0x0000000000000100       0x20 ./object/UART.o
+ .debug_aranges
+                0x0000000000000120       0x20 ./object/GPU.o
+ .debug_aranges
+                0x0000000000000140       0x20 ./object/fifo.o
+ .debug_aranges
+                0x0000000000000160       0x20 ./object/input.o
+ .debug_aranges
+                0x0000000000000180       0x20 ./object/form.o
+ .debug_aranges
+                0x00000000000001a0       0x20 ./object/timer.o
+ .debug_aranges
+                0x00000000000001c0       0x20 ./object/startup.o
+ .debug_aranges
+                0x00000000000001e0       0x20 /tmp/cch1UAiB.o
+ .debug_aranges
+                0x0000000000000200       0x20 /tmp/cclqMRGF.o
+ .debug_aranges
+                0x0000000000000220       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+ .debug_aranges
+                0x0000000000000240       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x0000000000000260       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x7a32
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x19e9 ./object/Graphic.o
+ .debug_info    0x00000000000019e9      0x78b ./object/linkedlist.o
+ .debug_info    0x0000000000002174      0x5b4 ./object/interrupt.o
+ .debug_info    0x0000000000002728      0x958 ./object/task.o
+ .debug_info    0x0000000000003080      0x32a ./object/gpio.o
+ .debug_info    0x00000000000033aa      0x7f2 ./object/memory.o
+ .debug_info    0x0000000000003b9c      0x76c ./object/main.o
+ .debug_info    0x0000000000004308      0xa58 ./object/debug.o
+ .debug_info    0x0000000000004d60      0x725 ./object/UART.o
+ .debug_info    0x0000000000005485      0x700 ./object/GPU.o
+ .debug_info    0x0000000000005b85      0x157 ./object/fifo.o
+ .debug_info    0x0000000000005cdc      0x667 ./object/input.o
+ .debug_info    0x0000000000006343      0x8c1 ./object/form.o
+ .debug_info    0x0000000000006c04      0xa37 ./object/timer.o
+ .debug_info    0x000000000000763b       0xa9 ./object/startup.o
+ .debug_info    0x00000000000076e4       0x58 /tmp/cch1UAiB.o
+ .debug_info    0x000000000000773c       0x5b /tmp/cclqMRGF.o
+ .debug_info    0x0000000000007797       0xb5 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+ .debug_info    0x000000000000784c       0xb5 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0000000000007901      0x131 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+
+.debug_abbrev   0x0000000000000000     0x18b3
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x327 ./object/Graphic.o
+ .debug_abbrev  0x0000000000000327      0x1e7 ./object/linkedlist.o
+ .debug_abbrev  0x000000000000050e      0x108 ./object/interrupt.o
+ .debug_abbrev  0x0000000000000616      0x230 ./object/task.o
+ .debug_abbrev  0x0000000000000846      0x11f ./object/gpio.o
+ .debug_abbrev  0x0000000000000965      0x1e2 ./object/memory.o
+ .debug_abbrev  0x0000000000000b47      0x1a8 ./object/main.o
+ .debug_abbrev  0x0000000000000cef      0x210 ./object/debug.o
+ .debug_abbrev  0x0000000000000eff      0x13e ./object/UART.o
+ .debug_abbrev  0x000000000000103d      0x15e ./object/GPU.o
+ .debug_abbrev  0x000000000000119b       0xeb ./object/fifo.o
+ .debug_abbrev  0x0000000000001286      0x187 ./object/input.o
+ .debug_abbrev  0x000000000000140d      0x181 ./object/form.o
+ .debug_abbrev  0x000000000000158e      0x19f ./object/timer.o
+ .debug_abbrev  0x000000000000172d       0x8b ./object/startup.o
+ .debug_abbrev  0x00000000000017b8       0x14 /tmp/cch1UAiB.o
+ .debug_abbrev  0x00000000000017cc       0x14 /tmp/cclqMRGF.o
+ .debug_abbrev  0x00000000000017e0       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+ .debug_abbrev  0x00000000000017f4       0x14 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000000000001808       0xab /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+
+.debug_line     0x0000000000000000     0x1a7b
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x774 ./object/Graphic.o
+ .debug_line    0x0000000000000774      0x1d4 ./object/linkedlist.o
+ .debug_line    0x0000000000000948       0xa8 ./object/interrupt.o
+ .debug_line    0x00000000000009f0      0x1d3 ./object/task.o
+ .debug_line    0x0000000000000bc3       0xb9 ./object/gpio.o
+ .debug_line    0x0000000000000c7c      0x22b ./object/memory.o
+ .debug_line    0x0000000000000ea7       0xd2 ./object/main.o
+ .debug_line    0x0000000000000f79      0x1ea ./object/debug.o
+ .debug_line    0x0000000000001163       0xf0 ./object/UART.o
+ .debug_line    0x0000000000001253       0xcc ./object/GPU.o
+ .debug_line    0x000000000000131f       0x6e ./object/fifo.o
+ .debug_line    0x000000000000138d       0xeb ./object/input.o
+ .debug_line    0x0000000000001478      0x157 ./object/form.o
+ .debug_line    0x00000000000015cf      0x171 ./object/timer.o
+ .debug_line    0x0000000000001740       0x4b ./object/startup.o
+ .debug_line    0x000000000000178b       0x80 /tmp/cch1UAiB.o
+ .debug_line    0x000000000000180b       0x6f /tmp/cclqMRGF.o
+ .debug_line    0x000000000000187a       0x87 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+ .debug_line    0x0000000000001901       0x5e /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x000000000000195f      0x11c /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+
+.debug_frame    0x0000000000000000     0x14f8
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x58c ./object/Graphic.o
+ .debug_frame   0x000000000000058c      0x330 ./object/linkedlist.o
+ .debug_frame   0x00000000000008bc       0x84 ./object/interrupt.o
+ .debug_frame   0x0000000000000940      0x300 ./object/task.o
+ .debug_frame   0x0000000000000c40      0x184 ./object/gpio.o
+ .debug_frame   0x0000000000000dc4       0xb4 ./object/memory.o
+ .debug_frame   0x0000000000000e78       0x48 ./object/main.o
+ .debug_frame   0x0000000000000ec0      0x1cc ./object/debug.o
+ .debug_frame   0x000000000000108c       0x70 ./object/UART.o
+ .debug_frame   0x00000000000010fc       0x70 ./object/GPU.o
+ .debug_frame   0x000000000000116c       0x70 ./object/fifo.o
+ .debug_frame   0x00000000000011dc       0x8c ./object/input.o
+ .debug_frame   0x0000000000001268       0xb8 ./object/form.o
+ .debug_frame   0x0000000000001320      0x154 ./object/timer.o
+ .debug_frame   0x0000000000001474       0x2c ./object/startup.o
+ .debug_frame   0x00000000000014a0       0x20 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+ .debug_frame   0x00000000000014c0       0x38 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+
+.debug_str      0x0000000000000000     0x14d4
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x77a ./object/Graphic.o
+                                        0x855 (size before relaxing)
+ .debug_str     0x000000000000077a      0x1c0 ./object/linkedlist.o
+                                        0x327 (size before relaxing)
+ .debug_str     0x000000000000093a       0x88 ./object/interrupt.o
+                                        0x388 (size before relaxing)
+ .debug_str     0x00000000000009c2      0x221 ./object/task.o
+                                        0x539 (size before relaxing)
+ .debug_str     0x0000000000000be3       0xee ./object/gpio.o
+                                        0x206 (size before relaxing)
+ .debug_str     0x0000000000000cd1      0x139 ./object/memory.o
+                                        0x44b (size before relaxing)
+ .debug_str     0x0000000000000e0a       0x5b ./object/main.o
+                                        0x414 (size before relaxing)
+ .debug_str     0x0000000000000e65      0x125 ./object/debug.o
+                                        0x587 (size before relaxing)
+ .debug_str     0x0000000000000f8a       0x7b ./object/UART.o
+                                        0x3bb (size before relaxing)
+ .debug_str     0x0000000000001005       0x63 ./object/GPU.o
+                                        0x3c9 (size before relaxing)
+ .debug_str     0x0000000000001068       0x35 ./object/fifo.o
+                                         0xf0 (size before relaxing)
+ .debug_str     0x000000000000109d       0x60 ./object/input.o
+                                        0x3ab (size before relaxing)
+ .debug_str     0x00000000000010fd       0x2f ./object/form.o
+                                        0x48c (size before relaxing)
+ .debug_str     0x000000000000112c      0x232 ./object/timer.o
+                                        0x5ed (size before relaxing)
+ .debug_str     0x000000000000135e       0x3d ./object/startup.o
+                                         0xcf (size before relaxing)
+ .debug_str     0x000000000000139b      0x139 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+                                        0x1d2 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x217
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x217 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x10
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+
+.debug_macro
+ *(.debug_macro)
+
+.stack          0x0000000000080000        0x0
+                0x0000000000080000                _stack = .
+ *(.stack)
+
+.ARM.attributes
+                0x0000000000000000       0x31
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x33 ./object/Graphic.o
+ .ARM.attributes
+                0x0000000000000033       0x33 ./object/linkedlist.o
+ .ARM.attributes
+                0x0000000000000066       0x33 ./object/interrupt.o
+ .ARM.attributes
+                0x0000000000000099       0x33 ./object/task.o
+ .ARM.attributes
+                0x00000000000000cc       0x33 ./object/gpio.o
+ .ARM.attributes
+                0x00000000000000ff       0x33 ./object/memory.o
+ .ARM.attributes
+                0x0000000000000132       0x33 ./object/main.o
+ .ARM.attributes
+                0x0000000000000165       0x33 ./object/debug.o
+ .ARM.attributes
+                0x0000000000000198       0x33 ./object/UART.o
+ .ARM.attributes
+                0x00000000000001cb       0x33 ./object/GPU.o
+ .ARM.attributes
+                0x00000000000001fe       0x33 ./object/fifo.o
+ .ARM.attributes
+                0x0000000000000231       0x33 ./object/input.o
+ .ARM.attributes
+                0x0000000000000264       0x33 ./object/form.o
+ .ARM.attributes
+                0x0000000000000297       0x33 ./object/timer.o
+ .ARM.attributes
+                0x00000000000002ca       0x33 ./object/startup.o
+ .ARM.attributes
+                0x00000000000002fd       0x1f /tmp/ccdglB7y.o
+ .ARM.attributes
+                0x000000000000031c       0x1f /tmp/cch1UAiB.o
+ .ARM.attributes
+                0x000000000000033b       0x1f /tmp/ccyTCouD.o
+ .ARM.attributes
+                0x000000000000035a       0x1f /tmp/cclqMRGF.o
+ .ARM.attributes
+                0x0000000000000379       0x18 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000000000000391       0x18 /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000000000003a9       0x34 /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a(lib_a-memcpy.o)
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+LOAD ./object/Graphic.o
+LOAD ./object/linkedlist.o
+LOAD ./object/interrupt.o
+LOAD ./object/task.o
+LOAD ./object/gpio.o
+LOAD ./object/memory.o
+LOAD ./object/main.o
+LOAD ./object/debug.o
+LOAD ./object/UART.o
+LOAD ./object/GPU.o
+LOAD ./object/fifo.o
+LOAD ./object/input.o
+LOAD ./object/form.o
+LOAD ./object/timer.o
+LOAD ./object/startup.o
+LOAD /tmp/ccdglB7y.o
+LOAD /tmp/cch1UAiB.o
+LOAD /tmp/ccyTCouD.o
+LOAD /tmp/cclqMRGF.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/fpu/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libg.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.9.3/../../../arm-none-eabi/lib/fpu/libc.a
+END GROUP
+OUTPUT(kernel.elf elf32-littlearm)
